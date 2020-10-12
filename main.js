@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
 });
 
 function checkInputs() {
-	// trim to remove the whitespaces
+
 	const usernameValue = username.value.trim();
 	const emailValue = email.value.trim();
 	const passwordValue = password.value.trim();
@@ -47,7 +47,7 @@ function checkInputs() {
 }
 
 function setErrorFor(input, message) {
-	const formControl = input.parentElement;  //form-control element
+	const formControl = input.parentElement;
 	const small = formControl.querySelector('small');
 	formControl.className = 'form-control error';
 	small.innerText = message;
